@@ -1,3 +1,27 @@
+:root {
+  --purple: #a729f5;
+  --light-purple: #f6e7ff;
+  --pure-white: #fff;
+  --dark-navy: #313e51;
+  --grey-navy: #626c7f;
+  --light-grey: #f4f6fa;
+  --navy: #3b4d66;
+  --light-bluish: #abc1e1;
+  --light-orange: #fff1e9;
+  --light-green: #e0fdef;
+  --light-blue: #ebf0ff;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik Italic';
+  src: url('/assets/fonts/Rubik-Italic-VariableFont_wght.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,5 +34,9 @@
 }
 
 body {
+  font-family: Rubik, sans-serif;
   line-height: 1.5;
+  color: var(--dark-navy);
+  background-color: var(--light-grey);
+  background-image: url('/assets/images/pattern-background-mobile-light.svg');
 }
