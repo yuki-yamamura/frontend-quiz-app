@@ -1,3 +1,5 @@
+import Layout from '@/components/Layout';
+
 import type { AppProps } from 'next/app';
 
 import '@unocss/reset/tailwind.css';
@@ -8,7 +10,9 @@ if (process.env.NODE_ENV === 'development' && typeof window === 'undefined') {
 }
 
 const App = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
 );
 
 export default App;
